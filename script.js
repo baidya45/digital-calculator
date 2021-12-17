@@ -31,7 +31,8 @@ for(items of buttons){
         }
         else if(buttontext == '=')
         {
-            screen.value = eval(svalue);
+            svalue = eval(svalue);
+            screen.value = svalue;
         }
         else{
             svalue += buttontext;
